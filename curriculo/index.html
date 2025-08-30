@@ -1,13 +1,61 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>CV Builder AI</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root" class="app-container">
+      <div class="split-screen-layout">
+        <div class="form-section">
+          <form class="personal-info-form">
+            <h2>Dados Pessoais</h2>
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Seu nome completo"
+              />
+            </div>
+          </form>
+
+          <div class="skills-section">
+            <h2>Habilidades</h2>
+            <ul class="skills-list"></ul>
+          </div>
+
+          <div class="experience-section">
+            <h2>Experiência Profissional</h2>
+            <ul class="experience-list"></ul>
+          </div>
+
+          <button type="button" class="ai-enhance-button">
+            Melhorar com IA
+          </button>
+        </div>
+
+        <div class="preview-section">
+          <div class="cv-preview">
+            <div class="personal-header">
+              <h1 class="preview-name">Nome do Candidato</h1>
+              <p class="preview-contact-info">Email, Telefone, LinkedIn</p>
+            </div>
+
+            <div class="preview-skills">
+              <h3>Habilidades</h3>
+              <ul class="preview-skills-list"></ul>
+            </div>
+
+            <div class="preview-experience">
+              <h3>Experiência</h3>
+              <ul class="preview-experience-list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
